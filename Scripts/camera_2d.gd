@@ -22,7 +22,7 @@ func _process(delta: float):
 	offset = offset.lerp(_original_offset + _target_offset, delta * smoothness)
 
 func _pick_new_target():
-	_timer = randf_range(0.2, 0.6)  # how often it changes direction
+	_timer = randf_range(0.2, 0.6)  
 	_target_offset = Vector2(
 		randf_range(-1, 1),
 		randf_range(-1, 1)
