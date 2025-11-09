@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://g0w7fq5rsykc"]
+
+[node name="Rain" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+amount = 30
+lifetime = 2.7
+emission_shape = 3
+emission_rect_extents = Vector2(200, 10)
+gravity = Vector2(-300, 980)

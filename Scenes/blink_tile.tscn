@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxid3wd70oh24"]
+
+[ext_resource type="Texture2D" uid="uid://u5o5qeryt2xp" path="res://Assets/Sprites/world_tileset.png" id="1_mhjcm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icddg"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2p58k"]
+size = Vector2(16, 16)
+
+[node name="BlinkTile" type="StaticBody2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_icddg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mhjcm")
+region_enabled = true
+region_rect = Rect2(96, 16, 16, 16)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2p58k")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

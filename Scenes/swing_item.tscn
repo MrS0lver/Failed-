@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://s37agky0dgh1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0vwf8"]
+size = Vector2(64, 8)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0vwf8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw1df"]
+size = Vector2(32, 32)
+
+[node name="SwingItem" type="Node2D"]
+
+[node name="Hand" type="RigidBody2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Hand"]
+offset_right = 64.0
+offset_bottom = 8.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hand"]
+position = Vector2(32, 4)
+shape = SubResource("RectangleShape2D_0vwf8")
+
+[node name="Foot" type="RigidBody2D" parent="."]
+position = Vector2(108, -11)
+collision_mask = 2
+physics_material_override = SubResource("PhysicsMaterial_0vwf8")
+
+[node name="ColorRect" type="ColorRect" parent="Foot"]
+offset_left = 8.0
+offset_right = 40.0
+offset_bottom = 32.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Foot"]
+position = Vector2(24, 16)
+shape = SubResource("RectangleShape2D_hw1df")
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+position = Vector2(32, 4)
+rotation = -1.56207
+node_a = NodePath("../Hand")
+node_b = NodePath("../Foot")
+disable_collision = false
+length = 100.0

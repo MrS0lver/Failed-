@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://its1tss3blh3"]
+
+[ext_resource type="Texture2D" uid="uid://dj5l3oae4daj2" path="res://Assets/Sprites/IceRoad.png" id="1_6ba80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1tvd8"]
+size = Vector2(16, 156)
+
+[node name="IceRoad" type="RigidBody2D"]
+mass = 30.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6ba80")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_1tvd8")
