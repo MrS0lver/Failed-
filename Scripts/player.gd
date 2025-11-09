@@ -39,9 +39,13 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	# Jump + Wall Jump
+	#if is_on_wall():
+			#shape.rotation_degrees = 90
+	#else:
+			#shape.rotation_degrees = 0
+			
 	if Input.is_action_just_pressed("JUMP") and (is_on_floor() or is_on_wall()):
 		velocity.y = JUMP_VELOCITY
-		
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		var body = collision.get_collider()

@@ -12,3 +12,4 @@ func _ready() -> void:
 func _on_zone_body_entered() -> void:
 	animation.play("Attack")
 	print("Player Entered!")
+	
