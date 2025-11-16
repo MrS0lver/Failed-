@@ -272,7 +272,7 @@ _data = {
 
 [node name="Player" parent="." instance=ExtResource("1_jjgbg")]
 z_index = 1
-position = Vector2(1055, 394)
+position = Vector2(1130, -593)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2.5, 2.5)

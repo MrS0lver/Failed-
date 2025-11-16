@@ -202,7 +202,7 @@ func _physics_process(delta: float) -> void:
 		player_animation.flip_h = false
 		
 		#Anmations
-	if is_on_wall() and not is_on_floor():
+	if is_on_wall() and not is_on_floor() and AbilityManager.has("Wall_Jump"):
 		player_animation.play("Wall")
 
 	elif not is_on_floor():
