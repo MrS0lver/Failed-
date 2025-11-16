@@ -106,13 +106,13 @@ This system will allow players to compete globally and improve their runs.
 
 <img width="1143" height="641" alt="Screenshot 2025-11-16 211151" src="https://github.com/user-attachments/assets/261f9226-ed01-47b4-a3e5-77c877a2c411" />
 
+---
 
 ## Feedback
 
 If you encounter bugs, have suggestions, or want to submit feedback, please use the Itch.io page:  
 https://mrs0lver.itch.io/failed-knight
 
----
 
 
 
