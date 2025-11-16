@@ -50,11 +50,12 @@ vertical_alignment = 1
 [node name="TextureRect" type="TextureRect" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = -0.297
+anchor_top = -0.795
 anchor_right = 0.115
 anchor_bottom = 1.0
-offset_top = -0.0329971
+offset_top = 55.245
 offset_right = -0.479996
 grow_vertical = 0
 texture = ExtResource("3_p4bvn")
+expand_mode = 5
 flip_h = true

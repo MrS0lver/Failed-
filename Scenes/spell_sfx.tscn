@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnv0dihdwwnjq"]
+
+[ext_resource type="AudioStream" uid="uid://qmbaseh7xk6w" path="res://Assets/SFX/Spell.mp3" id="1_umfe0"]
+
+[node name="Spell_SFX" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_umfe0")

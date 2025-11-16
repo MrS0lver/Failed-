@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvfoxs4yane23"]
+
+[ext_resource type="Texture2D" uid="uid://cg7gk5gb4wckw" path="res://Assets/Sprites/SolidArrow-Right.png" id="1_m3tyi"]
+[ext_resource type="Script" uid="uid://d23leinoxvfmr" path="res://Scripts/touch_btn.gd" id="1_oxcs3"]
+[ext_resource type="Texture2D" uid="uid://dikmdq2cj7r0" path="res://Assets/Sprites/SolidArrow-Left.png" id="2_oxcs3"]
+[ext_resource type="Texture2D" uid="uid://c6p0pqv7kgreb" path="res://Assets/Sprites/Jump.png" id="3_x58bd"]
+
+[node name="TouchBTN" type="CanvasLayer"]
+script = ExtResource("1_oxcs3")
+
+[node name="RIGHT" type="TouchScreenButton" parent="."]
+position = Vector2(216, 528)
+texture_normal = ExtResource("1_m3tyi")
+action = "RIGHT"
+
+[node name="LEFT" type="TouchScreenButton" parent="."]
+position = Vector2(56, 528)
+texture_normal = ExtResource("2_oxcs3")
+action = "LEFT"
+
+[node name="JUMP" type="TouchScreenButton" parent="."]
+position = Vector2(976, 512)
+texture_normal = ExtResource("3_x58bd")
+action = "JUMP"

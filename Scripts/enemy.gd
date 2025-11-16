@@ -23,4 +23,3 @@ func _process(delta: float) -> void:
 func _on_dead_zone_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		body.take_damage(1)
-		DilougeManager.show_dialogue("Hey Mate, How're U Are U lost or Smthing ?")
