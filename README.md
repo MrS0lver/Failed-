@@ -98,6 +98,15 @@ This system will allow players to compete globally and improve their runs.
 
 ---
 
+# ScreenShots
+
+<img width="1152" height="649" alt="Screenshot 2025-11-16 211033" src="https://github.com/user-attachments/assets/0703b362-b736-4606-82c0-f7a062f377b2" />
+
+<img width="1142" height="637" alt="Screenshot 2025-11-16 211124" src="https://github.com/user-attachments/assets/46433e67-4726-496b-8a25-f51bde42adbc" />
+
+<img width="1143" height="641" alt="Screenshot 2025-11-16 211151" src="https://github.com/user-attachments/assets/261f9226-ed01-47b4-a3e5-77c877a2c411" />
+
+
 ## Feedback
 
 If you encounter bugs, have suggestions, or want to submit feedback, please use the Itch.io page:  
@@ -105,12 +114,5 @@ https://mrs0lver.itch.io/failed-knight
 
 ---
 
-## Credits
 
-- Developer: MrSolver  
-- Core Systems & Programming: Leap Project Team  
-- Art & Animation: Project Contributors  
-- Level Design: Leap Project Developers  
-
----
 
